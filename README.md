@@ -1,5 +1,7 @@
 # Easy MERN Auth 🛡️
 
+![EasyAuth Preview](./assets/preview.png)
+
 A professional, full-stack authentication starter kit built with the MERN stack (MongoDB, Express, React, Node.js). This project provides a robust foundation for secure user management, featuring email verification and password recovery.
 
 ## 🚀 Features
@@ -13,24 +15,28 @@ A professional, full-stack authentication starter kit built with the MERN stack 
     -   Password hashing with `bcryptjs`.
     -   JWT-based authentication.
     -   Secure, HTTP-only cookie storage for tokens.
-    -   Protected API routes and frontend navigation guards.
+    -   **Protected API routes and frontend navigation guards.**
 
-## 🛠️ Tech Stack
+    ## 🖼️ UI Preview
 
-### Backend
--   **Node.js & Express**: Fast, unopinionated web framework.
--   **MongoDB & Mongoose**: Flexible NoSQL database with schema modeling.
--   **JWT (jsonwebtoken)**: Secure token-based authentication.
--   **Nodemailer**: For sending transactional emails.
+    The application features a modern, clean, and fully responsive user interface:
 
-### Frontend
--   **React (Vite)**: Modern frontend framework with fast HMR.
--   **Zustand**: Clean and scalable state management.
--   **Tailwind CSS**: Utility-first CSS framework for rapid styling.
--   **Shadcn UI**: High-quality, accessible UI components.
--   **Axios**: Promise-based HTTP client for the browser and Node.js.
+    -   **Dashboard**: A centralized view showing account status with success/error badges.
+    -   **Auth Forms**: Centered, card-based layouts for Login and Registration with real-time validation feedback.
+    -   **Verification UI**: A specialized 6-digit OTP input interface for a seamless verification experience.
+    -   **Responsive Design**: Optimized for mobile, tablet, and desktop viewing using Tailwind CSS's mobile-first approach.
 
-## 📦 Getting Started
+    ## 🧪 Demo Mode (No Backend Required)
+
+    For testing and demonstration purposes, the frontend is currently configured in **Demo Mode**. You can explore the entire UI and authentication flow without setting up a database:
+
+    -   **Login Email**: `test@example.com`
+    -   **Login Password**: `password123`
+    -   **Verification OTP**: `123456`
+
+    To disable Demo Mode and connect to your real backend, set `MOCK_MODE = false` in `frontend/src/store/authStore.js`.
+
+    ## 📦 Getting Started
 
 ### Prerequisites
 -   Node.js installed on your machine.
@@ -39,7 +45,7 @@ A professional, full-stack authentication starter kit built with the MERN stack 
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/rajjitlai/Easy_MERN_Auth.git
 cd Easy_MERN_Auth
 ```
 
